@@ -19,11 +19,28 @@ h1 {
     justify-content: flex-end;
     height: auto;
 }
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+    #nav {
+        /* When on medium sized screens, we center it by evenly distributing empty space around items */
+        justify-content: space-around;
+    }
+}
+
+/*small screens*/
+@media all and (max-width: 500px) {
+    #nav {
+        /* When on medium sized screens, we center it by evenly distributing empty space around items */
+        flex-direction: column;
+    }
+}
+
 #nav a:hover{
     background:burlywood;
 }
 
-nav a{
+#nav a{
     text-decoration: none;
     font-weight: bold;
     padding: 1em;
