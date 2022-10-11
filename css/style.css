@@ -1,23 +1,34 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+#header {
     background-color: white;
+    position: sticky;
+    top: 0;
 }
 
-h1 {
+#title {
+    text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white
+    font-size: 200%;
+    
+}
+
+#content {
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    
 }
 
 
 /* Large Screens*/
 #nav {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     list-style: none;
-    margin: 0;
+    margin: 0%;
     background: beige;
     justify-content: flex-end;
     height: auto;
+    min-width: 300px;
 }
 
 /* Medium screens */
@@ -31,7 +42,6 @@ h1 {
 /*small screens*/
 @media all and (max-width: 500px) {
     #nav {
-        /* When on medium sized screens, we center it by evenly distributing empty space around items */
         flex-direction: column;
     }
 }
@@ -41,9 +51,13 @@ h1 {
 }
 
 #nav a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
     font-weight: bold;
     padding: 1em;
     display: block;
+    text-align: center;
+    width: auto;
+    flex-grow: 1;
 }
 

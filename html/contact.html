@@ -9,34 +9,32 @@
     </head>
     <body>
         <div id="header">
-            <div class="wrap">
-                <div id="title-area">
-                    <h1 id="title">
-                        <a href="#">Matthew Jiang</a>   
-                    </h1>
-                </div>
-
-                <div id="nav">
-                    
-                </div>
-                <script>
-                    $(function(){
-                        $("#nav").load("nav.html");
-                    });
-                </script>
-                <!--end of navigation bar-->
-                <div id="body">
-                    <!--navigation bar-->
-                    
-                    <h4>
-                        Contact Information:
-                    </h4>
-                    <p>
-                        Phone: +1 (661) 666-3798 <br>
-                        Email: jiangmy@usc.edu
-                    </p>
-                </div>
+            <div id="title-area">
+                <h1 id="title">
+                    <a href="#">Matthew Jiang</a>   
+                </h1>
             </div>
+
+            <!--navigation bar-->
+            <div id="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../html/contact.html">Contact</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="https://github.com/matthewyjiang">GitHub</a></li>
+            </div>
+            <script>
+                $(function(){
+                    $("#nav").load("nav.html");
+                });
+            </script>
+            <!--end of navigation bar-->
+        </div>
+        <div id="content">  
+            <p>
+                <b>Contact Information:</b><br>
+                Phone: +1 (661) 666-3798 <br>
+                Email: jiangmy@usc.edu
+            </p>
         </div>
 
     </body>
