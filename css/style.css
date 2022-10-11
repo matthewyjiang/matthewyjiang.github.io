@@ -1,15 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Jost&effect=fire-animation");
+
 #header {
     background-color: white;
     position: sticky;
     top: 0;
 }
 
-#title {
+#title  {
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 200%;
-    
+    font-family: 'Jost', sans-serif;
+    font-size: 400%;    
+    border: none;
+    outline: none;
+    text-decoration: none;
+    color: inherit; 
 }
+
+#title:link, #title:hover, #title:active, #title:visited{
+    border: none;
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+    -webkit-tap-highlight-color: white;
+}
+
 
 #content {
     text-align: left;
