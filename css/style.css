@@ -1,7 +1,42 @@
 body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: white;
 }
 
 h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white
 }
+
+
+/* Large Screens*/
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    margin: 0;
+    background: beige;
+    justify-content: space-around;
+    height: auto;
+}
+
+.navigation a{
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+}
+
+.navigation b{
+    text-decoration: none;
+    display: block;
+}
+.navigation c{
+    text-decoration: none;
+    display: block;
+}
+.navigation d{
+    text-decoration: none;
+    display: block;
+}
+
+
