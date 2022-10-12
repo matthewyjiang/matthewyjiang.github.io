@@ -10,13 +10,13 @@
     text-align: center;
     font-family: 'Jost', sans-serif;
     font-size: 400%;    
-    border: none;
+    padding: 2%;
     outline: none;
     text-decoration: none;
     color: inherit; 
 }
 
-#title:link, #title:hover, #title:active, #title:visited{
+#title a:link, #title a:hover, #title a:active, #title a:visited{
     border: none;
     outline: none;
     text-decoration: none;
@@ -26,6 +26,7 @@
 
 
 #content {
+    padding: 2%;
     text-align: left;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
