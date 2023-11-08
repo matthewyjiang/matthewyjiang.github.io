@@ -1,79 +1,55 @@
-@import url("https://fonts.googleapis.com/css?family=Jost&effect=fire-animation");
-
-#header {
-    background-color: white;
-    position: sticky;
-    top: 0;
-}
-
-#title  {
-    text-align: center;
-    font-family: 'Jost', sans-serif;
-    font-size: 400%;    
-    padding: 2%;
-    outline: none;
-    text-decoration: none;
-    color: inherit; 
-}
-
-#title a:link, #title a:hover, #title a:active, #title a:visited{
-    border: none;
-    outline: none;
-    text-decoration: none;
-    color: inherit;
-    -webkit-tap-highlight-color: white;
-}
-
-
-#content {
-    padding: 2%;
-    text-align: left;
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: black;
-    
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
 
-/* Large Screens*/
-#nav {
-    display: flex;
-    flex-flow: row nowrap;
+nav ul {
     list-style: none;
-    margin: 0%;
-    background: beige;
-    justify-content: flex-end;
-    height: auto;
-    min-width: 300px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
-/* Medium screens */
-@media all and (max-width: 800px) {
-    #nav {
-        /* When on medium sized screens, we center it by evenly distributing empty space around items */
-        justify-content: space-around;
-    }
+nav ul li {
+    margin: 0 20px;
 }
 
-/*small screens*/
-@media all and (max-width: 500px) {
-    #nav {
-        flex-direction: column;
-    }
-}
-
-#nav a:hover{
-    background:burlywood;
-}
-
-#nav a{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: inherit;
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    padding: 1em;
-    display: block;
-    text-align: center;
-    width: auto;
-    flex-grow: 1;
 }
 
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.profile {
+    border-radius: 50%;
+    height: 200px;
+}
+
+.project {
+    margin: 20px 0;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
