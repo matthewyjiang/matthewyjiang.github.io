@@ -6,6 +6,8 @@ body {
     color: #333;
 }
 
+
+
 header {
     background: #333;
     color: #fff;
@@ -46,6 +48,79 @@ section {
     max-width: 100%;
     height: auto;
 }
+
+/* Large Screens*/
+#nav {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+    margin: 0%;
+    background: #333;
+    justify-content: flex-end;
+    height: auto;
+    min-width: 300px;
+}
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+    #nav {
+        /* When on medium sized screens, we center it by evenly distributing empty space around items */
+        justify-content: space-around;
+    }
+}
+
+/*small screens*/
+@media all and (max-width: 500px) {
+    #nav {
+        flex-direction: column;
+    }
+}
+
+#nav a:hover{
+    background:#555;
+}
+
+#nav a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1em;
+    display: block;
+    text-align: center;
+    width: auto;
+    flex-grow: 1;
+}
+
+#title  {
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 300%;    
+    padding: 1%;
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+     
+}
+
+
+.centered-list {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .centered-list ul {
+    text-align: left;
+    list-style-type: circle;
+    padding: 0; /* This removes the default padding */
+  }
+  
+  .centered-list li {
+    
+  }
 
 footer {
     background: #333;
