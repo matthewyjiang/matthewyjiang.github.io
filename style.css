@@ -30,6 +30,11 @@ nav ul li a {
     text-decoration: none;
 }
 
+hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+}
+
 section {
     padding: 20px;
     text-align: center;
